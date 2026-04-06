@@ -4,3 +4,11 @@
 
 [node name="CharacterSelect" type="Node2D" unique_id=2081638700]
 script = ExtResource("1_mneoq")
+
+[node name="ButtonBack" type="ColorRect" parent="." unique_id=513749033]
+offset_left = 700.0
+offset_top = 20.0
+offset_right = 780.0
+offset_bottom = 100.0
+
+[connection signal="gui_input" from="ButtonBack" to="." method="_on_button_back_gui_input"]

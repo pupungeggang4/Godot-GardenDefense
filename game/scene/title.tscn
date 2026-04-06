@@ -76,3 +76,7 @@ offset_bottom = 425.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Quit Game"
+
+[connection signal="gui_input" from="ButtonStart" to="." method="_on_button_start_gui_input"]
+[connection signal="gui_input" from="ButtonCollection" to="." method="_on_button_collection_gui_input"]
+[connection signal="gui_input" from="ButtonQuit" to="." method="_on_button_quit_gui_input"]
