@@ -13,70 +13,62 @@ offset_bottom = 43.0
 theme_override_font_sizes/font_size = 32
 text = "Defense Game"
 
-[node name="ButtonStart" type="ColorRect" parent="." unique_id=1495137674]
+[node name="ButtonStart" type="Button" parent="." unique_id=220481287]
 offset_left = 160.0
 offset_top = 120.0
 offset_right = 640.0
 offset_bottom = 200.0
-color = Color(1, 1, 0, 1)
 
 [node name="TextStart" type="Label" parent="." unique_id=1102076298]
 offset_left = 180.0
 offset_top = 140.0
 offset_right = 354.0
 offset_bottom = 185.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Start Game"
 
-[node name="ButtonCollection" type="ColorRect" parent="." unique_id=222344882]
+[node name="ButtonCollection" type="Button" parent="." unique_id=613988150]
 offset_left = 160.0
 offset_top = 200.0
 offset_right = 640.0
 offset_bottom = 280.0
-color = Color(0, 1, 1, 1)
 
 [node name="TextCollection" type="Label" parent="." unique_id=2129207528]
 offset_left = 180.0
 offset_top = 220.0
 offset_right = 333.0
 offset_bottom = 265.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Collection"
 
-[node name="ButtonErase" type="ColorRect" parent="." unique_id=419975387]
+[node name="ButtonErase" type="Button" parent="." unique_id=1848051821]
 offset_left = 160.0
 offset_top = 280.0
 offset_right = 640.0
 offset_bottom = 360.0
-color = Color(1, 1, 0, 1)
 
 [node name="TextErase" type="Label" parent="." unique_id=1006212795]
 offset_left = 180.0
 offset_top = 300.0
 offset_right = 346.0
 offset_bottom = 345.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Erase Data"
 
-[node name="ButtonQuit" type="ColorRect" parent="." unique_id=321259401]
+[node name="ButtonQuit" type="Button" parent="." unique_id=373562557]
 offset_left = 160.0
 offset_top = 360.0
 offset_right = 640.0
 offset_bottom = 440.0
-color = Color(0, 1, 1, 1)
 
 [node name="TextQuit" type="Label" parent="." unique_id=1117257110]
 offset_left = 180.0
 offset_top = 380.0
 offset_right = 346.0
 offset_bottom = 425.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Quit Game"
 
-[connection signal="gui_input" from="ButtonStart" to="." method="_on_button_start_gui_input"]
-[connection signal="gui_input" from="ButtonCollection" to="." method="_on_button_collection_gui_input"]
-[connection signal="gui_input" from="ButtonQuit" to="." method="_on_button_quit_gui_input"]
+[connection signal="button_up" from="ButtonStart" to="." method="_on_button_start_button_up"]
+[connection signal="button_up" from="ButtonCollection" to="." method="_on_button_collection_button_up"]
+[connection signal="button_up" from="ButtonQuit" to="." method="_on_button_quit_button_up"]

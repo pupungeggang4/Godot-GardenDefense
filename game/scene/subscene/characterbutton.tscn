@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dsma2yy1tickj"]
+
+[ext_resource type="Script" uid="uid://csmk6h83fnvgq" path="res://script/subscene/characterbutton.gd" id="1_gnsr7"]
+
+[node name="Characterbutton" type="Button" unique_id=499985496]
+offset_right = 80.0
+offset_bottom = 80.0
+script = ExtResource("1_gnsr7")

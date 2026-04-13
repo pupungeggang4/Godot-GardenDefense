@@ -4,3 +4,11 @@
 
 [node name="Collection" type="Node2D" unique_id=447237428]
 script = ExtResource("1_vdy28")
+
+[node name="ButtonBack" type="Button" parent="." unique_id=1169667487]
+offset_left = 740.0
+offset_top = 20.0
+offset_right = 780.0
+offset_bottom = 60.0
+
+[connection signal="button_up" from="ButtonBack" to="." method="_on_button_back_button_up"]
