@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://ba2fgg74v8wub"]
+
+[node name="Menu" type="Control" unique_id=395466063]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="." unique_id=588732680]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 140.0
+offset_right = 560.0
+offset_bottom = 460.0
+
+[node name="Label" type="Label" parent="Background" unique_id=1563996428]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 77.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Paused"
+
+[node name="ButtonResume" type="Button" parent="Background" unique_id=1449209122]
+layout_mode = 0
+offset_top = 80.0
+offset_right = 320.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 32
+text = "Resume"
+
+[node name="ButtonExit" type="Button" parent="Background" unique_id=70424216]
+layout_mode = 0
+offset_top = 160.0
+offset_right = 320.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 32
+text = "Exit to title"
+
+[node name="ButtonQuit" type="Button" parent="Background" unique_id=1965659441]
+layout_mode = 0
+offset_top = 240.0
+offset_right = 320.0
+offset_bottom = 320.0
+theme_override_font_sizes/font_size = 32
+text = "Quit Game"

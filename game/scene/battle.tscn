@@ -4,3 +4,9 @@
 
 [node name="Battle" type="Node2D" unique_id=614456168]
 script = ExtResource("1_afp2b")
+
+[node name="Button" type="Button" parent="." unique_id=633483461]
+offset_left = 740.0
+offset_top = 20.0
+offset_right = 780.0
+offset_bottom = 60.0

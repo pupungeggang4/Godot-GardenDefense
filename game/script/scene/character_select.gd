@@ -17,3 +17,4 @@ func _on_button_start_button_up() -> void:
 
 func select_character(id) -> void:
     selected_character = id
+    get_node('TextDescription').text = 'Selected %d' % [selected_character]
