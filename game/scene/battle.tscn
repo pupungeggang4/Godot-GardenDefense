@@ -1,12 +1,26 @@
 [gd_scene format=3 uid="uid://b2x8u7gwinmvq"]
 
 [ext_resource type="Script" uid="uid://u07d8y5digjj" path="res://script/scene/battle.gd" id="1_afp2b"]
+[ext_resource type="PackedScene" uid="uid://ba2fgg74v8wub" path="res://scene/subscene/menu.tscn" id="2_ffp3s"]
 
 [node name="Battle" type="Node2D" unique_id=614456168]
 script = ExtResource("1_afp2b")
 
-[node name="Button" type="Button" parent="." unique_id=633483461]
+[node name="UI" type="Control" parent="." unique_id=1427287511]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ButtonMenu" type="Button" parent="UI" unique_id=633483461]
+layout_mode = 0
 offset_left = 740.0
 offset_top = 20.0
 offset_right = 780.0
 offset_bottom = 60.0
+
+[node name="Menu" parent="UI" unique_id=395466063 instance=ExtResource("2_ffp3s")]
+visible = false
+layout_mode = 1
+
+[connection signal="button_up" from="UI/ButtonMenu" to="." method="_on_button_menu_button_up"]

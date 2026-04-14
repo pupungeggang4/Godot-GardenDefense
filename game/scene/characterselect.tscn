@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://d2tnf35vfr1s6"]
 
-[ext_resource type="Script" uid="uid://b3213lhy0ln1a" path="res://script/scene/character_select.gd" id="1_mneoq"]
-[ext_resource type="PackedScene" uid="uid://dsma2yy1tickj" path="res://scene/subscene/characterbutton.tscn" id="2_iht2v"]
+[ext_resource type="Script" uid="uid://b3213lhy0ln1a" path="res://script/scene/characterselect.gd" id="1_suntw"]
+[ext_resource type="PackedScene" uid="uid://dsma2yy1tickj" path="res://scene/subscene/characterbutton.tscn" id="2_ycins"]
 
 [node name="CharacterSelect" type="Node2D" unique_id=2081638700]
-script = ExtResource("1_mneoq")
+script = ExtResource("1_suntw")
 
 [node name="TextTitle" type="Label" parent="." unique_id=1222930743]
 offset_left = 20.0
@@ -40,42 +40,42 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Character1" parent="CharacterButtons" unique_id=499985496 instance=ExtResource("2_iht2v")]
+[node name="Character1" parent="CharacterButtons" unique_id=499985496 instance=ExtResource("2_ycins")]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 160.0
 offset_right = 140.0
 offset_bottom = 280.0
 
-[node name="Character2" parent="CharacterButtons" unique_id=631077604 instance=ExtResource("2_iht2v")]
+[node name="Character2" parent="CharacterButtons" unique_id=631077604 instance=ExtResource("2_ycins")]
 layout_mode = 0
 offset_left = 160.0
 offset_top = 160.0
 offset_right = 280.0
 offset_bottom = 280.0
 
-[node name="Character3" parent="CharacterButtons" unique_id=1062428093 instance=ExtResource("2_iht2v")]
+[node name="Character3" parent="CharacterButtons" unique_id=1062428093 instance=ExtResource("2_ycins")]
 layout_mode = 0
 offset_left = 300.0
 offset_top = 160.0
 offset_right = 420.0
 offset_bottom = 280.0
 
-[node name="Character4" parent="CharacterButtons" unique_id=1279783421 instance=ExtResource("2_iht2v")]
+[node name="Character4" parent="CharacterButtons" unique_id=1279783421 instance=ExtResource("2_ycins")]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 300.0
 offset_right = 140.0
 offset_bottom = 420.0
 
-[node name="Character5" parent="CharacterButtons" unique_id=1751201298 instance=ExtResource("2_iht2v")]
+[node name="Character5" parent="CharacterButtons" unique_id=1751201298 instance=ExtResource("2_ycins")]
 layout_mode = 0
 offset_left = 160.0
 offset_top = 300.0
 offset_right = 280.0
 offset_bottom = 420.0
 
-[node name="Character6" parent="CharacterButtons" unique_id=769596386 instance=ExtResource("2_iht2v")]
+[node name="Character6" parent="CharacterButtons" unique_id=769596386 instance=ExtResource("2_ycins")]
 layout_mode = 0
 offset_left = 300.0
 offset_top = 300.0

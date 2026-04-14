@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://ba2fgg74v8wub"]
 
+[ext_resource type="Script" uid="uid://cmahig3xq3j2p" path="res://script/subscene/menu.gd" id="1_gx41q"]
+
 [node name="Menu" type="Control" unique_id=395466063]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gx41q")
 
 [node name="Background" type="ColorRect" parent="." unique_id=588732680]
 layout_mode = 0
@@ -15,7 +18,7 @@ offset_top = 140.0
 offset_right = 560.0
 offset_bottom = 460.0
 
-[node name="Label" type="Label" parent="Background" unique_id=1563996428]
+[node name="TextTitle" type="Label" parent="Background" unique_id=1563996428]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 20.0
@@ -48,3 +51,7 @@ offset_right = 320.0
 offset_bottom = 320.0
 theme_override_font_sizes/font_size = 32
 text = "Quit Game"
+
+[connection signal="button_up" from="Background/ButtonResume" to="." method="_on_button_resume_button_up"]
+[connection signal="button_up" from="Background/ButtonExit" to="." method="_on_button_exit_button_up"]
+[connection signal="button_up" from="Background/ButtonQuit" to="." method="_on_button_quit_button_up"]
