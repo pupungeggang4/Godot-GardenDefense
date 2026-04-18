@@ -18,12 +18,6 @@ offset_left = 160.0
 offset_top = 120.0
 offset_right = 640.0
 offset_bottom = 200.0
-
-[node name="TextStart" type="Label" parent="." unique_id=1102076298]
-offset_left = 180.0
-offset_top = 140.0
-offset_right = 354.0
-offset_bottom = 185.0
 theme_override_font_sizes/font_size = 32
 text = "Start Game"
 
@@ -32,12 +26,6 @@ offset_left = 160.0
 offset_top = 200.0
 offset_right = 640.0
 offset_bottom = 280.0
-
-[node name="TextCollection" type="Label" parent="." unique_id=2129207528]
-offset_left = 180.0
-offset_top = 220.0
-offset_right = 333.0
-offset_bottom = 265.0
 theme_override_font_sizes/font_size = 32
 text = "Collection"
 
@@ -46,12 +34,6 @@ offset_left = 160.0
 offset_top = 280.0
 offset_right = 640.0
 offset_bottom = 360.0
-
-[node name="TextErase" type="Label" parent="." unique_id=1006212795]
-offset_left = 180.0
-offset_top = 300.0
-offset_right = 346.0
-offset_bottom = 345.0
 theme_override_font_sizes/font_size = 32
 text = "Erase Data"
 
@@ -60,12 +42,6 @@ offset_left = 160.0
 offset_top = 360.0
 offset_right = 640.0
 offset_bottom = 440.0
-
-[node name="TextQuit" type="Label" parent="." unique_id=1117257110]
-offset_left = 180.0
-offset_top = 380.0
-offset_right = 346.0
-offset_bottom = 425.0
 theme_override_font_sizes/font_size = 32
 text = "Quit Game"
 

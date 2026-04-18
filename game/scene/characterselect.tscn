@@ -25,14 +25,14 @@ offset_left = 620.0
 offset_top = 500.0
 offset_right = 780.0
 offset_bottom = 580.0
+theme_override_font_sizes/font_size = 32
 text = "Start"
 
-[node name="TextDescription" type="TextEdit" parent="." unique_id=1258487284]
+[node name="TextDescription" type="RichTextLabel" parent="." unique_id=789399258]
 offset_left = 440.0
 offset_top = 160.0
 offset_right = 780.0
 offset_bottom = 420.0
-placeholder_text = "Description"
 
 [node name="CharacterButtons" type="Control" parent="." unique_id=1397298997]
 layout_mode = 3

@@ -1,3 +1,9 @@
 [gd_scene format=3 uid="uid://biuum0u4osnpv"]
 
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sxkwd"]
+size = Vector2(64, 64)
+
 [node name="Unit" type="Node2D" unique_id=1969134134]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1218388731]
+texture = SubResource("PlaceholderTexture2D_sxkwd")

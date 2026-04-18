@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://dudr5qvf5jcbe"]
+
+[ext_resource type="Script" uid="uid://c3raqwbl3dsq5" path="res://script/subscene/energybar.gd" id="1_dfp2s"]
+[ext_resource type="Script" uid="uid://c3gfxqs3qjj7y" path="res://script/subscene/buttonupgrade.gd" id="1_e638b"]
+
+[sub_resource type="Gradient" id="Gradient_6y0rt"]
+colors = PackedColorArray(0.7907629, 0.39995766, 0.23209938, 1, 1, 0.69411767, 0.07058824, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_e638b"]
+gradient = SubResource("Gradient_6y0rt")
+width = 400
+height = 20
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6y0rt"]
+size = Vector2(80, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e638b"]
+size = Vector2(80, 80)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_dfp2s"]
+size = Vector2(560, 80)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_e638b"]
+size = Vector2(80, 80)
+
+[node name="Battlelower" type="Node2D" unique_id=525609864]
+
+[node name="Status" type="Node2D" parent="." unique_id=1718677964]
+
+[node name="LevelText" type="Label" parent="Status" unique_id=1060689830]
+offset_left = 20.0
+offset_top = 464.0
+offset_right = 60.0
+offset_bottom = 492.0
+theme_override_font_sizes/font_size = 20
+text = "Lv.1"
+
+[node name="EnergyText" type="Label" parent="Status" unique_id=1871306092]
+offset_left = 120.0
+offset_top = 464.0
+offset_right = 185.0
+offset_bottom = 492.0
+theme_override_font_sizes/font_size = 20
+text = "6.0/6.0"
+metadata/_edit_use_anchors_ = true
+
+[node name="EnergyBar" type="Sprite2D" parent="Status" unique_id=1412590274]
+position = Vector2(220, 470)
+texture = SubResource("GradientTexture2D_e638b")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 200, 20)
+script = ExtResource("1_dfp2s")
+
+[node name="ButtonUpgrade" type="Area2D" parent="." unique_id=1521917956]
+position = Vector2(20, 500)
+script = ExtResource("1_e638b")
+
+[node name="Sprite" type="Sprite2D" parent="ButtonUpgrade" unique_id=801964345]
+texture = SubResource("PlaceholderTexture2D_6y0rt")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ButtonUpgrade" unique_id=485164000]
+position = Vector2(40, 40)
+shape = SubResource("RectangleShape2D_e638b")
+
+[node name="Hand" type="Node2D" parent="." unique_id=1776100745]
+
+[node name="Back" type="Sprite2D" parent="Hand" unique_id=1006334829]
+position = Vector2(120, 500)
+texture = SubResource("PlaceholderTexture2D_dfp2s")
+centered = false
+
+[node name="Deck" type="Sprite2D" parent="." unique_id=1191741935]
+position = Vector2(700, 500)
+texture = SubResource("PlaceholderTexture2D_e638b")
+centered = false
+
+[connection signal="input_event" from="ButtonUpgrade" to="ButtonUpgrade" method="_on_input_event"]

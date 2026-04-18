@@ -2,9 +2,12 @@
 
 [ext_resource type="Script" uid="uid://u07d8y5digjj" path="res://script/scene/battle.gd" id="1_afp2b"]
 [ext_resource type="PackedScene" uid="uid://ba2fgg74v8wub" path="res://scene/subscene/menu.tscn" id="2_ffp3s"]
+[ext_resource type="PackedScene" uid="uid://dudr5qvf5jcbe" path="res://scene/subscene/battlelower.tscn" id="3_soyo5"]
 
 [node name="Battle" type="Node2D" unique_id=614456168]
 script = ExtResource("1_afp2b")
+
+[node name="Battlelower" parent="." unique_id=611357853 instance=ExtResource("3_soyo5")]
 
 [node name="UI" type="Control" parent="." unique_id=1427287511]
 layout_mode = 3
